@@ -1,0 +1,18 @@
+﻿.bttt
+{
+	background-image:url(../pic/button-bg.png);
+	background-repeat:repeat-x;
+	border: 1px solid #999;
+	-moz-border-radius: 5px; padding: 5px; color: black; font-weight: bold;
+    -webkit-border-radius: 5px; font-size: 13px;  width: 70px;
+	}
+.bttt:hover		{ background: white; color: black; }
+.btttL
+{
+	background-image:url(../pic/button-bg.png);
+	background-repeat:repeat-x;
+	border: 1px solid #999;
+	-moz-border-radius: 5px; padding: 5px; color: black; font-weight: bold;
+    -webkit-border-radius: 5px; font-size: 13px;  width: 120px;
+	}
+.btttL:hover		{ background: white; color: black; }

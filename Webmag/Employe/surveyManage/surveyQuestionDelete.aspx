@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="surveyQuestionDelete.aspx.cs" Inherits="Webmag_Employe_surveyManage_surveyQuestionDelete" %>

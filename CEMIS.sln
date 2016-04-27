@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CEMIS", ".", "{4BCC4EC9-A8AB-4FCD-888A-31726D375842}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/CEMIS"
+		Debug.AspNetCompiler.PhysicalPath = "E:\电商国赛\CEMIS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CEMIS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CEMIS"
+		Release.AspNetCompiler.PhysicalPath = "E:\电商国赛\CEMIS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CEMIS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1827"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLInstallControl", "CLInstallControl\CLInstallControl.csproj", "{E5EF0846-CA96-488E-BB7B-D1F17AD1C8A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BCC4EC9-A8AB-4FCD-888A-31726D375842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCC4EC9-A8AB-4FCD-888A-31726D375842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCC4EC9-A8AB-4FCD-888A-31726D375842}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCC4EC9-A8AB-4FCD-888A-31726D375842}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E5EF0846-CA96-488E-BB7B-D1F17AD1C8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EF0846-CA96-488E-BB7B-D1F17AD1C8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EF0846-CA96-488E-BB7B-D1F17AD1C8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EF0846-CA96-488E-BB7B-D1F17AD1C8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿
+#left
+{
+	width:260px;
+	float:left;
+	}
+
+#btn
+{
+	float:right;
+	}
+#QuestionnaireDetails
+{
+	border-width:1;
+	border-color:White;
+	border-style:dashed;
+	}
+.wordColor
+{
+
+	font-size:13px;
+	}

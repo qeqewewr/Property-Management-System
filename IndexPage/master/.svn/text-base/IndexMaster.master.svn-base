@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="IndexMaster.master.cs"
+    Inherits="IndexMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/IndexMaster.css" rel="Stylesheet" type="text/css" />
+    <link href="../styles/style.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript">
+	function change() {
+        var url = "VerifyCode.aspx?d=" + Math.random();
+        $("#yzmImg").attr("src", url);
+    }
+   </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="top">
+	  <img src="pic/pic_logo.gif" />
+	  <!-- <img src="pic/2.png" />  -->
+		  
+		   <img src="../Webmag/Employe/infoManage/introduce/images/<%=p1%>" width="565" height="100" />
+			</div>
+
+    <div class="menu_navcc">
+        <div class="menu_nav clearfix">
+            <ul class="nav_content">
+                <li id="indexLi" style="padding-left:0;width:75px;"><a href="Index.aspx"><span>首页</span></a></li>
+                <li id="introductionLi"><a href="PropertyIntroduction.aspx"><span>光大介绍</span></a></li>
+
+                <li><a href="http://202.91.250.87:8083/"><span>物业商城</span></a></li>
+                <li id="newsLi"><a href="NewsList.aspx?pageno=1"><span>光大动态</span></a></li>
+                <li id="roomLi"><a href="RoomSource.aspx?pageno=1"><span>房源信息</span></a></li>
+                <li id="rentLi"><a href="RentProcedure.aspx"><span>租赁手续</span></a></li>
+                <li id="lesseeLi"><a href="LesseeAD.aspx?pageno=1"><span>企业宣传</span></a></li>
+                <li id="messageLi"><a href="Message.aspx?pageno=1"><span>留言查看</span></a></li>
+            </ul>
+            <div class="menu_nav_right">
+            </div>
+        </div>
+    </div>
+    <div class="clear" style="height: 10px;"></div>
+    <div id="content">
+        <div id="leftBox">
+            <div class="box">
+               
+                <div class="content">
+                    <div style="margin-left: 4px">
+                        <asp:Image runat="server" ImageUrl="~/IndexPage/pic/login.jpg" ID="loginImg" /></div>
+                    <div style="margin-top: 5px; margin-left: 30px">
+                        <asp:Label ID="Label1" AssociatedControlID="txtUserName" runat="server" Font-Size="12px">用  户：</asp:Label><asp:TextBox
+                            ID="txtUserName" runat="server" TextMode="SingleLine" Width="120"></asp:TextBox></div>
+                    <div style="margin-top: 5px; margin-left: 30px">
+                        <asp:Label ID="Label2" AssociatedControlID="txtPwd" runat="server" Font-Size="12px">密  码：</asp:Label><asp:TextBox
+                            ID="txtPwd" runat="server" TextMode="Password" Width="120"></asp:TextBox></div>
+                    <div style="margin-top: 5px; margin-left: 30px">
+                        <asp:Label ID="Label3" AssociatedControlID="ddlType" runat="server" Font-Size="12px">类  型：</asp:Label><asp:DropDownList
+                            ID="ddlType" runat="server" Width="120">
+                            <asp:ListItem Value="property">物业</asp:ListItem>
+                            <asp:ListItem Value="lessee">租户</asp:ListItem>
+                           <%-- <asp:ListItem Value="lessee">个人</asp:ListItem>--%>
+                        </asp:DropDownList>
+                    </div>
+                    <div style="margin-top: 5px; margin-left: 30px">
+                        <asp:Label ID="Label4" runat="server" Font-Size="12px">验证码</asp:Label><asp:TextBox
+                            ID="txtValidateNum" runat="server" TextMode="SingleLine" Width="60" CssClass="yanzhengma"></asp:TextBox><asp:Image
+                                ID="validateImg" runat="server" ImageUrl="~/IndexPage/master/ValidateNum.aspx?t=1" ImageAlign="AbsBottom" OnClick="validateImg_Click" /></div>
+                    <div id="btnlogin">
+                        <asp:Button ID="btnLogin" runat="server" Text="" Width="61px" Height="26px" Font-Bold="true"
+                            OnClick="btnLogin_Click" CssClass="login" /></div>
+                </div>
+             
+            </div>
+            <!--  
+    <div id="workTime">
+    <div class="start">工作时间：</div>
+    <div style="font-size:12px; margin-top:5px;">周一~周五：8：00——17：00</div>
+    </div>
+    <div class="line"><hr  /></div>
+    -->
+            <div id="qq">
+                <div class="start" style="float:left;display:inline;padding-top:3px;">
+                    客服：</div>
+                <div id="QQ1" style="float:left;display:inline;">
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1715111026&site=qq&menu=yes">
+                        <img border="0" src="http://wpa.qq.com/pa?p=2:1715111026:41" alt="点击这里给我发消息" title="点击这里给我发消息">
+                    </a><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2543202947&site=qq&menu=yes">
+                        <img border="0" src="http://wpa.qq.com/pa?p=2:2543202947:41" alt="点击这里给我发消息" title="点击这里给我发消息" />
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="messageBtn"> 
+           <a href="Message.aspx?pageno=1">点 击 留 言</a> 
+         
+            </div>
+ 
+            <div style="margin-top:8px;">
+              <!--  <img width="228" height="230" src="pic/second/09.jpg">  -->
+			  <img width="228" height="230" src="../Webmag/Employe/infoManage/introduce/images/<%=p2%>">
+			  </div>
+        </div>
+        <div id="rightBox">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="foot">
+    <table border="0" cellpadding="0" cellspacing="0" class="CopyBox">
+        <tr>
+            <td>
+                <div style="margin-top: 20px; margin-bottom: 20px;">
+                    <hr />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <div style="font-size: 12px; margin-bottom: 20px">
+                    Copyright&copy; 2011-2013 XX物业 版权所有.</div>
+            </td>
+        </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>

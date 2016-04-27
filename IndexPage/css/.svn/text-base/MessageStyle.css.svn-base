@@ -1,0 +1,36 @@
+﻿@CHARSET "UTF-8";
+
+/*Css document*/
+
+/*留言板*/
+.liuyan { width:522px; float:left; margin:25px 0 0 58px; display:inline; padding-bottom:20px;}
+.yiques { width:670px; 
+float:left; margin-top:6px; display:inline; border:1px solid #4fbdb0; padding-bottom:10px;
+	height: 100%;
+}
+	.yi01 { width:666px; 
+float:left; margin:13px 0 0 16px; display:inline;
+	height: 97px;
+}
+	.yiq { width:647px; 
+float:left; background:url(../pic/que_03.jpg) no-repeat; color:#565656; padding-left:0px;
+	height: 24px;
+}
+	.yiq01 { width:628px; 
+margin-left:20px; line-height:1.6em;
+}
+	.yia { width:95%; 
+float:left; background:url(../pic/ans_03.jpg) no-repeat; padding-left:20px;
+}
+.yiques02 { width:520px; float:left; margin-top:6px; display:inline; padding-bottom:10px;}
+.newsPage1 { width:520px; float:left; margin:15px 0 0 0; display:inline; color:#3c3c3c; background:url(../images/dott_03.jpg) top left repeat-x; text-align:center; padding-top:7px;}
+		.newsPage1 a { color:#3c3c3c;}
+		.newsPage1 a:hover { color:#f00;}
+		.newsPage1 select { width:46px;}
+.yihTbg { width:510px; float:left; margin-top:21px; display:inline; border:1px solid #4fbdb0; background:url(../images/yybg_06.jpg) repeat-x; line-height:24px; padding-left:10px; color:#fff; font-size:14px; font-weight:bold;}
+.messtable { width:510px; float:left; margin:10px 0 0 10px; display:inline;}
+	.messtable table td{ height:29px;}
+	.messtable table input { border:1px solid #dedede; background:#fafafa;}
+	.messtable a { color:#000;}
+	.messtable a:hover { color:#f00;}
+	#mebt { width:79px; height:21px; float:left; overflow:hidden; background:url(../images/tj_03.jpg) no-repeat; text-align:center; border:none;}

@@ -1,0 +1,11 @@
+﻿#allContent
+{
+	font-size:14px;
+    margin-left:10px;
+    margin-top:10px;
+    width:500px;
+	}
+#btn
+{
+	margin-left:270px;
+	}

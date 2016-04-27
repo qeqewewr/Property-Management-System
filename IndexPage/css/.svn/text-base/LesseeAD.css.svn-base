@@ -1,0 +1,27 @@
+﻿#item
+{
+	width:320px;
+	float:left;
+	margin-top:10px;
+	text-align:center
+	
+	}
+#ADDescribe
+{
+	font-size:smaller;
+	}
+#lesseeName
+{
+	font-size:larger;
+	font-weight:bold;
+	color:Blue;
+	}
+.group
+{
+
+	width:650px;
+	}
+.picc
+{
+	margin: 0 auto;
+	}

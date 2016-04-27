@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LesseeMaster.master.cs" Inherits="master_LesseeMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <script src="../js/SpryAccordion.js" type="text/javascript"></script>
+    <script src="../js/PropertyMaster.js" type="text/javascript"></script>
+    <link href="../css/SpryAccordion.css"rel="stylesheet" type="text/css" />
+    <link href="../css/PropertyMaster.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.webmenu li').hover(function() {
+            $(this).children('ul').stop(true, true).show('slow');
+        }, function() {
+            $(this).children('ul').stop(true, true).hide('slow');
+        });
+
+        $('.webmenu li').hover(function() {
+            $(this).children('div').stop(true, true).show('slow');
+        }, function() {
+            $(this).children('div').stop(true, true).hide('slow');
+        });
+    });
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body style="FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ADD2DA,endColorStr=#FFFFFF);background: -moz-linear-gradient(top, #ADD2DA, #FFFFFF); background: -webkit-gradient(linear, left top, left bottom, from(#ADD2DA), to(#FFFFFF));">
+    <form id="form1" runat="server">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="57" background="../pic/PropertyMaster/main_03.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="378" height="57" background="../pic/PropertyMaster/111.jpg">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td width="281" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="33" height="27"><img src="../pic/PropertyMaster/main_05.gif" width="33" height="27" /></td>
+            <td width="248" background="../pic/PropertyMaster/main_06.gif"><table width="225" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="17"><div align="right"><div style="width:69px; height:17px; background-color:Black; font-size:12px; color:White; margin:0 auto; "><a href="../LesseeManage/ChangePwd.aspx" style="text-decoration:none; color:White; margin-right:10px;">修改密码</a></div></div></td>
+                <td><div align="right"></div></td>
+                <td><div align="right"><div style="width:69px; height:17px; background-color:Black; font-size:12px; color:White; margin:0 auto; "><a href="../Logout.aspx" style="text-decoration:none; color:White; margin-right:10px;">退出系统</a></div></div></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="40" background="../pic/PropertyMaster/main_10.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="194" height="40" background="../pic/PropertyMaster/main_07.gif">&nbsp;</td>
+        <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="21"></td>
+            <td width="35" class="STYLE7"></td>
+            <td width="21" class="STYLE7"></td>
+            <td width="35" class="STYLE7"></td>
+            <td width="21" class="STYLE7"></td>
+            <td width="35" class="STYLE7"></td>
+            <td width="21" class="STYLE7"></td>
+            <td width="35" class="STYLE7"></td>
+            <td width="21" class="STYLE7"></td>
+            <td width="35" class="STYLE7"></td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        </td>
+        <td width="248" background="../pic/PropertyMaster/main_11.gif">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="16%"><span class="STYLE5"></span></td>
+            <td width="75%"><div align="center"><span class="STYLE7">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"> 
+            </asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server" > 
+            <ContentTemplate> 
+                当前时间是： <asp:Label ID="Label1" runat="server"></asp:Label> 
+            <asp:Timer ID="Timer1" runat="server" Interval="1000"> 
+            </asp:Timer> 
+            </ContentTemplate> 
+            </asp:UpdatePanel> </span></div></td>
+            <td width="9%">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="30" background="../pic/PropertyMaster/main_31.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="8" height="30"><img src="../pic/PropertyMaster/main_28.gif" width="8" height="30" /></td>
+        <td width="147" background="../pic/PropertyMasterimages/main_29.gif">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="24%">&nbsp;</td>
+            <td width="43%" height="20" valign="bottom" class="STYLE1">管理菜单</td>
+            <td width="33%">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="39"><img src="../pic/PropertyMaster/main_30.gif" width="39" height="30" /></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="20" valign="bottom"><span class="STYLE1">当前登录用户：<asp:Label ID="LoginName" runat="server"></asp:Label></span></td>
+            <td valign="bottom" class="STYLE1"><div align="right"><img src="../pic/PropertyMaster/sj.gif" width="6" height="7" /> IP：<asp:Label ID="IPLabel" runat="server"></asp:Label>       &nbsp; &nbsp;&nbsp;</div></td>
+          </tr>
+        </table></td>
+        <td width="17"><img src="../pic/PropertyMaster/main_32.gif" width="17" height="30" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table id="Box" width="100%"  border="0" cellspacing="0" cellpadding="0" >
+<tr><td width="8" bgcolor="#353c44"><img src="../pic/PropertyMaster/main_28.gif" width="8" height="100%" /></td>
+<td align="left" valign="top" class="style1" >
+<div id="LeftBox">
+<div id="Accordion1" class="Accordion" tabindex="0">
+  
+
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#162753'; "onmouseout="this.style.borderStyle='none'">入驻前期</div>
+    <div class="AccordionPanelContent">  
+    <br /><br />
+    <ul class="webmenu"><li><a href="../LesseeManage/DecorationCheck.aspx">装修监督</a><br /></li>
+    <li><a>搬入预约<img src="../pic/PropertyMaster/sj.gif" /></a><br /><ul class="second-menu"><li><a href="../LesseeManage/OrderComeInAdd.aspx">添加</a></li><li><a href="../LesseeManage/OrderComeIn.aspx">查看</a></li></ul></li>
+    </ul>
+</div>
+  </div>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#162753'; "onmouseout="this.style.borderStyle='none'">正式办公</div>
+    <div class="AccordionPanelContent">
+    <br /><br />
+    <ul class="webmenu">
+    <li><a>报修申请<img src="../pic/PropertyMaster/sj.gif" /></a><br /><ul class="second-menu"><li><a href="../LesseeManage/MaintainAdd.aspx">添加</a></li><li><a href="../LesseeManage/Maintain.aspx">查看</a></li></ul></li><br />
+    <li><a href="../LesseeManage/Fee.aspx">费用</a><br /></li>
+    <li><a href="../LesseeManage/Notice.aspx">通知</a><br /></li>
+    <li><a>投诉管理<img src="../pic/PropertyMaster/sj.gif" /></a><br /><ul class="second-menu"><li><a href="../LesseeManage/ComplainAdd.aspx">添加</a></li><li><a href="../LesseeManage/ComplainDeal.aspx">查看</a></li></ul></li><br />
+    <li><a>加班管理<img src="../pic/PropertyMaster/sj.gif" /></a><br /><ul class="second-menu"><li><a href="../LesseeManage/OrderOvertimeAdd.aspx">添加</a></li><li><a href="../LesseeManage/OrderOvertime.aspx">查看</a></li></ul></li><br />
+    <li><a href="../LesseeManage/Questionnaire.aspx">问询调查</a></li>
+    </ul>
+
+    </div>
+  </div>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#162753'; "onmouseout="this.style.borderStyle='none'">退租预约</div>
+    <div class="AccordionPanelContent"> 
+    <br /><br />
+    <ul class="webmenu">
+        <li><a >搬出预约<img src="../pic/PropertyMaster/sj.gif" /><br /></a><ul class="second-menu"><li><a href="../LesseeManage/OrderComeOutAdd.aspx">添加</a></li><li><a href="../LesseeManage/OrderComeOut.aspx">查看</a></li></ul></li>
+
+    </ul>
+</div>
+  </div>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#162753'; "onmouseout="this.style.borderStyle='none'">企业宣传</div>
+    <div class="AccordionPanelContent"> 
+    <br /><br />
+    <ul class="webmenu">
+        <li><a>企业宣传<img src="../pic/PropertyMaster/sj.gif" /><br /></a><ul class="second-menu"><li><a href="../LesseeManage/LesseeADAdd.aspx">添加</a></li><li><a href="../LesseeManage/LesseeAD.aspx">查看</a></li></ul></li>
+
+    </ul>
+</div>
+  </div>
+    <div class="AccordionPanel">
+    <div class="AccordionPanelTab" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#162753'; "onmouseout="this.style.borderStyle='none'">表单文档</div>
+    <div class="AccordionPanelContent"> 
+    <br /><br />
+    <ul class="webmenu">
+        <li><a href="../LesseeManage/Document.aspx">文档下载</a></li>
+    </ul>
+</div>
+  </div>
+</div> 
+</div>
+</td>
+<td width="10" bgcolor="#add2da"><img src="../pic/PropertyMaster/main_35.gif" width="10" height="100%" /></td>
+<td valign="top" id="RightBox">
+<div style="margin-left:15px;margin-top:5px; margin-bottom:5px; font-size:12px; "><asp:SiteMapPath ID="siteMap" runat="server"></asp:SiteMapPath></div>
+
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+ </td>
+ <td width="8" bgcolor="#353c44"><img src="../pic/PropertyMaster/main_28.gif" width="8" height="100%" /></td>
+ </tr>
+</table>
+ <table border="0" cellpadding="0" cellspacing="0" class="CopyBox" width="100%">
+    <tr><td><div style="margin-top:20px; margin-bottom:20px;"><hr /></div></td></tr>
+    <tr><td align="center"><div style="font-size:12px; margin-bottom:20px">Copyright&copy; 2011-2011 上海光大物业 版权所有.</div></td></tr>
+     
+    </table>
+    </form>
+
+</body>
+</html>
+

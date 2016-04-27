@@ -1,0 +1,24 @@
+﻿#allContent
+{
+	margin-left:15px;
+	margin-top:100px;
+	background-color:#4A3C8C;
+	
+}
+#ccc
+{
+	margin-left:30px;
+	}
+.line
+{
+	margin-bottom:10px;
+	font-size:12px;
+	}
+#btnSubmit
+{
+	margin-left:200px;
+	}
+.three
+{
+	margin-left:24px;
+	}

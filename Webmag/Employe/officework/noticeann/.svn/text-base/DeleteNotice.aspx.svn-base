@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DeleteNotice.aspx.cs" Inherits="Webmag_Employe_officework_noticeann_DeleteNotice" %>

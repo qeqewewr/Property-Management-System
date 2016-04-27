@@ -1,0 +1,64 @@
+﻿body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}
+ul
+{
+	list-style:none;
+	}
+a
+{
+	text-decoration:none;
+	}
+.STYLE1 {
+	font-size: 12px;
+	color: #000000;
+}
+.STYLE3 {
+	font-size: 12px;
+	color: #435255;
+}
+.STYLE5 {font-size: 12px}
+.STYLE7 {font-size: 12px; color: #FFFFFF; }
+
+#LeftBox
+{
+	width:147px;
+	}
+#versionTable
+{
+	height:19px;
+   background-image:url("../pic/PropertyMaster/main_69.gif");
+
+	}
+#RightBox
+{
+	width:100%;
+	}
+
+.webmenu li ul {
+	display:none;
+}
+.webmenu li
+{
+	margin-top:10px;
+	}
+
+.mulu
+{
+	
+	padding-left:15px;
+	text-decoration:none;
+	font-size:13px;
+	width:100px;
+	margin:15px;
+	}
+.second-menu
+{
+	position:absolute;
+	left:75px;
+	margin-top:-20px;
+	}

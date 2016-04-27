@@ -1,0 +1,19 @@
+﻿body 
+{
+	width:180px;
+}
+
+.menuItem{ color:#006699;  background-repeat:x-repeat; height:23px; width:160px;  padding-bottom:0px;font-size:12px; cursor:hand;}
+#masterDiv{ width:180px;}
+img{border:0px; vertical-align:baseline;}
+#planeOrder{ background-image:url(../images/menu.gif); background-repeat:repeat-x; font-weight:bold; font-size:13px; cursor:hand;}
+#procurement{ background-image:url(../images/menu.gif); background-repeat:repeat-x; font-weight:bold; font-size:13px; cursor:hand;}
+#systemSet { background-image:url(../images/menu.gif); background-repeat:repeat-x; font-weight:bold; font-size:13px; cursor:hand;}
+#orderHandle{	background-image:url(../images/menu.gif); background-repeat:repeat-x; font-weight:bold; font-size:13px; cursor:hand;	}
+#orderDown{	background-image:url(../images/menu.gif); background-repeat:repeat-x; font-weight:bold; font-size:13px; cursor:hand;	}
+#orderNOHandle{background-image:url(../images/menu.gif); background-repeat:repeat-x; font-weight:bold; font-size:13px; cursor:hand;	}
+#OrderUnitDiv{background-image:url(../images/menu.gif); background-repeat:repeat-x; font-weight:bold; font-size:13px; cursor:hand;	}
+#emergencyDiv{background-image:url(../images/menu.gif); background-repeat:repeat-x; font-weight:bold; font-size:13px; cursor:hand;	}
+
+
+
